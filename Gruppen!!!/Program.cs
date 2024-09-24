@@ -15,9 +15,7 @@
         {
             return a + b;
         }
-        static void Main(string[] args)
-        {
-        }
+        
             
  
     }
