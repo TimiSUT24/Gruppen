@@ -17,6 +17,7 @@
         }
         static int Addition(int a, int b)
         {
+            
             return a + b;
         }
 
@@ -35,32 +36,39 @@
     static void Main(string[] args)
     {
             Console.WriteLine("Tjo, vad vill du göra?");
-            Console.WriteLine("Du kan Addera,Subtrahera,multiplicera,dividera");
+            Console.WriteLine("1: Addera\n" +
+                              "2: Subtrahera\n" +
+                              "3: Multiplicera\n" +
+                              "4: Dividera");
+            int val = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Skriv tal");
 
             int a = int.Parse(Console.ReadLine());
 
-            string val = Console.ReadLine();
+            
             
             int b = int.Parse(Console.ReadLine());
 
             int result = 0; 
             switch (val)
             {
-                case "+":
+                case 1:
                     result = Addition(a, b);
-                    Console.Write(result);
+                    Console.WriteLine($"{a} + {b} = {result}");
                     break;
-                case "-":
+                case 2:
                      result = substraction(a, b);
-                    Console.WriteLine(result);
+                    Console.WriteLine($"{a} - {b} = {result}");
                     break;
-                case "*":
+                case 3:
                    result = Multiply(a, b);
-                    Console.WriteLine(result);
+                    Console.WriteLine($"{a} * {b} = {result}");
                     break;
-                case "/":
+                case 4:
                    result = Division(a, b);
-                    Console.WriteLine(result);
+                    Console.WriteLine($"{a} / {b} = {result}");
                     break;
             }
         }
