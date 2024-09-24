@@ -31,16 +31,18 @@
     {
             Console.WriteLine("Tjo, vad vill du göra?");
             Console.WriteLine("\n1. Addera \n2. Subtrahera \n3. Multiplicera \n4. Dividera");
-            int val = Convert.ToInt32(Console.ReadLine());
+            int a = int.Parse(Console.ReadLine());
+            string val = Console.ReadLine();
+            int b = int.Parse(Console.ReadLine()); 
             switch (val)
             {
-                case 1:
+                case "+":
                     break;
-                case 2:
+                case "-":
                     break;
-                case 3:
+                case "*":
                     break;
-                case 4:
+                case "/":
                     break;
             }
         }
