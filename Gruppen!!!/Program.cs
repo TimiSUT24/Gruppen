@@ -35,7 +35,7 @@
                               "2: Subtrahera\n" +
                               "3: Multiplicera\n" +
                               "4: Dividera\n" +
-                              "5: upphöjt till\n");
+                              "5: upphöjt till");
             int val = int.Parse(Console.ReadLine());
 
 
