@@ -35,9 +35,12 @@
     static void Main(string[] args)
     {
             Console.WriteLine("Tjo, vad vill du göra?");
-            Console.WriteLine("\n1. + \n2. - \n3. * \n4. /");
+            Console.WriteLine("Du kan Addera,Subtrahera,multiplicera,dividera");
+
             int a = int.Parse(Console.ReadLine());
+
             string val = Console.ReadLine();
+            
             int b = int.Parse(Console.ReadLine());
 
             int result = 0; 
@@ -45,7 +48,7 @@
             {
                 case "+":
                     result = Addition(a, b);
-                    Console.WriteLine(result);
+                    Console.Write(result);
                     break;
                 case "-":
                      result = substraction(a, b);
