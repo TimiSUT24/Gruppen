@@ -21,6 +21,12 @@
         {
             return a / b; 
         }
+        static double Power(int a, int b)
+        {
+            double resultat = Math.Pow(a, b);
+            return resultat;
+        }
+        
     
     static void Main(string[] args)
     {
@@ -28,7 +34,8 @@
             Console.WriteLine("1: Addera\n" +
                               "2: Subtrahera\n" +
                               "3: Multiplicera\n" +
-                              "4: Dividera");
+                              "4: Dividera\n" +
+                              "5: upphöjt till\n");
             int val = int.Parse(Console.ReadLine());
 
 
@@ -58,6 +65,10 @@
                 case 4:
                    result = Division(a, b);
                     Console.WriteLine($"{a} / {b} = {result}");
+                    break;
+                case 5:
+                    double resultat = Math.Pow(a, b);
+                   Console.WriteLine($"{a} ^ {b}  = {resultat}");
                     break;
             }
         }
