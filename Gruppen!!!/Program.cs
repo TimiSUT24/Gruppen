@@ -19,7 +19,12 @@
         {
             return a + b;
         }
-       
+
+        static int Division(int a, int b)
+        {
+            return a / b; 
+        }
+
             
  
 
